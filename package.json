@@ -5,7 +5,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production react-router build",
     "dev": "react-router dev",
-    "start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
+    "start": "cross-env NODE_ENV=production wrangler pages dev",
+    "deploy": "wrangler pages deploy",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -15,18 +16,23 @@
     "isbot": "^5.1.17",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.1.1"
+    "react-router": "^7.1.1",
+    "rehype-pretty-code": "^0.14.0"
   },
   "devDependencies": {
+    "@mdx-js/rollup": "^3.1.0",
     "@react-router/dev": "^7.1.1",
     "@types/node": "^20",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
     "autoprefixer": "^10.4.20",
+    "esbuild": "^0.24.2",
+    "mdx-bundler": "^10.0.3",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "wrangler": "^3.101.0"
   }
 }
