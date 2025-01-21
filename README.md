@@ -3,6 +3,12 @@
 This repository is an example for building a static, frequently updated website (like a blog) using React Router v7, with support for writing articles in Markdown.
 The focus is on creating a setup minimizes manual maintenance while maintaining the flexibility of React Router.
 
+To get started, run the following command:
+
+```sh
+npx create-react-router@latest --template Geb-algebra/rrv7-markdown-static-website
+```
+
 ## Key Features
 
 ### Completely static
